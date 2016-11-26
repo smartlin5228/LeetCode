@@ -1,5 +1,10 @@
 package main.java.SearchAndSort;
 
+import main.java.array.TwoSum;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by demon on 2016/11/16.
  */
@@ -25,6 +30,14 @@ public class SearchOnRotatedSortedArray {
                 else
                     return rotatedSearch(values, min, mid, x);
             }
+        }
+    }
+    public static class UnitTest {
+        @Test
+        public void testRotatedSearch() {
+            Solution solution = new SearchOnRotatedSortedArray().new Solution();
+            int[] rotatedArray = {4,5,6,7,1,2,3};
+            assertEquals(solution.rotatedSearch(rotatedArray, 1, 7, 5), 1);
         }
     }
 }
