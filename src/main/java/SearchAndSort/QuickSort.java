@@ -6,8 +6,9 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by demon on 2016/11/25.
+/*
+ * O(nlogn).worst time O(n2)
+ * space O(1)
  */
 public class QuickSort {
     public static void swap(int input[], int a, int b) {
